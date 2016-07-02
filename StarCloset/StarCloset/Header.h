@@ -9,22 +9,21 @@
 #ifndef Header_h
 #define Header_h
 
-//宏定义屏幕的尺寸
-#define KMainFrame  [UIScreen mainScreen].bounds
-#define KMainWidth  [UIScreen mainScreen].bounds.size.width
-#define KMainHeight [UIScreen mainScreen].bounds.size.height
-//宏定义随机颜色
-#define ARCCOLOR [UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1]
+
 
 #endif /* Header_h */
+//导入配置类头文件
+#import "Config.h"
+
 //导入的第三方头文件
+#import "RequestClient.h"
 #import "AFNetworking.h"
 #import "Masonry.h"
 #import "UIImageView+WebCache.h"
 
 //自定义类的头文件
 #import "WelcomeViewController.h"
-
+#import "MainViewController.h"
 
 
 //工具类的头文件

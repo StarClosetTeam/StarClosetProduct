@@ -24,11 +24,10 @@
     self.window.backgroundColor = [UIColor cyanColor];
     
     WelcomeViewController * welcomeVC = [WelcomeViewController new];
-    //    创建导航
-    UINavigationController * navigation = [[UINavigationController alloc]initWithRootViewController:welcomeVC];
     
-    self.window.rootViewController = navigation;
+    self.window.rootViewController = welcomeVC;
     
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
