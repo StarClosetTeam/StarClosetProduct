@@ -16,8 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    
 }
+- (void)createBackgroundImageView
+{
+    UIImageView * bgImageView = [[UIImageView alloc]initWithFrame:KMainFrame];
+    
+    [self.view addSubview:bgImageView];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -6,6 +6,8 @@
 //  Copyright © 2016年 王照柯. All rights reserved.
 //
 
+
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]init];
+    self.window.backgroundColor = [UIColor cyanColor];
+    
+    WelcomeViewController * welcomeVC = [WelcomeViewController new];
+    //    创建导航
+    UINavigationController * navigation = [[UINavigationController alloc]initWithRootViewController:welcomeVC];
+    
+    self.window.rootViewController = navigation;
+    
+    
     return YES;
 }
 
