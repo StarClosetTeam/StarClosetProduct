@@ -11,6 +11,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define kMainWindow [[UIApplication sharedApplication].delegate window]
+
 #define kMainBounds [UIScreen mainScreen].bounds
 #define kMainBoundsW [UIScreen mainScreen].bounds.size.width
 #define kMainBoundsH [UIScreen mainScreen].bounds.size.height
@@ -34,6 +36,8 @@ typedef void(^Failed)(NSError *error);
 
 typedef void(^ITFinishedBlock)(id responseObject, NSError *error);
 typedef void(^CallBackMessageBlock)(id resposeObject);
+
+typedef void(^requestBlcok)(NSArray * array);
 //disable loggin on production
 #ifdef DEBUG
 #define KSLog(format, ...) CFShow((__bridge CFTypeRef)[NSString stringWithFormat:format, ## __VA_ARGS__]);

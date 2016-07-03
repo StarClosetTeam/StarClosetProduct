@@ -21,6 +21,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc]init];
+    
     self.window.backgroundColor = [UIColor cyanColor];
     
     WelcomeViewController * welcomeVC = [WelcomeViewController new];
