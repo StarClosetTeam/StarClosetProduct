@@ -26,7 +26,7 @@
 /**创建欢迎图片*/
 - (void)createBackgroundImageView
 {
-    UIImageView * bgImageView = [[UIImageView alloc]initWithFrame:KMainFrame];
+    UIImageView * bgImageView = [[UIImageView alloc]initWithFrame:kMainBounds];
     
     bgImageView.image = [UIImage imageNamed:@"welcome.png"];
     
@@ -41,30 +41,39 @@
 /*进入主界面*/
 - (void)pushNextViewController
 {
+    NSLog(@"输出");
     UITabBarController * tabBarVC = [[UITabBarController alloc]init];
+    
+    NSArray * controllersNames = @[@"MainViewController",@"CollecationViewController",@"CommunityViewController",@"ManViewController",@"ShoppingViewController"];
+    NSArray * controllersTitles = @[@"首页",@"搭配",@"社区",@"主页",@"购物车"];
+    NSArray * controllersImageNames = @[@"bottom_home_icon_on@2x.png",@"bottom_dapei_icon_on@2x.png",@"bottom_like_icon_on@2x.png",@"button_pull_home@2x.png",@"bottom_shopping_icon_on@2x.png"];
+    
+    NSMutableArray * viewControllers = [NSMutableArray array];
+    
+    for (int i = 0; i<5; i++) {
+          Class  vcClass =  NSClassFromString(controllersNames[i]);
+          UINavigationController * navigation  = [self createNavigationVCWith:[vcClass new] andTitle:controllersTitles[i] withImageName:controllersImageNames[i]];
+        [viewControllers addObject:navigation];
+    }
 
-
-    VIEWCONTROLLER * mainNavigation = [self createNavigationVCWith:[MainViewController new] andTitle:@"首页"];
+    tabBarVC.viewControllers = viewControllers;
     
-    
-    [tabBarVC setViewControllers:@[mainNavigation]];
-    
-    [self.navigationController pushViewController:tabBarVC animated:YES];
+    kMainWindow.rootViewController = tabBarVC;
 }
 /**
- *  创建tabBar五个界面
+ *  创建tabBar五个界面的导航
  *
  *  @param viewController 五个导航控制器的根视图
  *  @param title          tabBar的标题
  */
-- (UINavigationController*)createNavigationVCWith:(UIViewController*)viewController andTitle:(NSString*)title
+- (UINavigationController*)createNavigationVCWith:(UIViewController*)viewController andTitle:(NSString*)title withImageName:(NSString*)imageName
 {
     
     UINavigationController * navigation = [[UINavigationController alloc]initWithRootViewController:viewController];
 //    设置tabBar标题
     navigation.tabBarItem.title = title;
 //    设置tabBar图片
-    navigation.tabBarItem.image = [UIImage imageNamed:@""];
+    navigation.tabBarItem.image = [UIImage imageNamed:imageName];
     
     return navigation;
 
