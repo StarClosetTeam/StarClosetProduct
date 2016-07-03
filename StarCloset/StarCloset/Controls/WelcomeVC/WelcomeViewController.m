@@ -41,10 +41,9 @@
 /*进入主界面*/
 - (void)pushNextViewController
 {
-    NSLog(@"输出");
     UITabBarController * tabBarVC = [[UITabBarController alloc]init];
     
-    NSArray * controllersNames = @[@"MainViewController",@"CollecationViewController",@"CommunityViewController",@"ManViewController",@"ShoppingViewController"];
+    NSArray * controllersNames = @[@"StarMainViewController",@"CollecationViewController",@"CommunityViewController",@"ManViewController",@"ShoppingViewController"];
     NSArray * controllersTitles = @[@"首页",@"搭配",@"社区",@"主页",@"购物车"];
     NSArray * controllersImageNames = @[@"bottom_home_icon_on@2x.png",@"bottom_dapei_icon_on@2x.png",@"bottom_like_icon_on@2x.png",@"button_pull_home@2x.png",@"bottom_shopping_icon_on@2x.png"];
     

@@ -25,12 +25,22 @@
 #import "Masonry.h"
 #import "UIImageView+WebCache.h"
 #import "RequestClient.h"
+#import "UIButton+WebCache.h"
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+
 
 //自定义类的头文件
 /*欢迎界面*/
 #import "WelcomeViewController.h"
+
 /*明星衣橱首页*/
-#import "MainViewController.h"
+#import "StarMainViewController.h"
+//明星衣橱首页ScrollviewModel
+#import "StarMainTopScrollModel.h"
+//明星衣橱首页搜索跳转页面
+#import "StarSearchViewController.h"
+
 
 //搭配界面
 #import "CollecationViewController.h"
@@ -49,4 +59,5 @@
 //工具类的头文件
 #import "RequestTool.h"
 
-
+//封装创建View类的工具
+#import "UIViewTool.h"

@@ -6,9 +6,11 @@
 //  Copyright © 2016年 Box. All rights reserved.
 //
 
+
 #ifndef Config_h
 #define Config_h
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
 #define kMainWindow [[UIApplication sharedApplication].delegate window]
@@ -37,7 +39,12 @@ typedef void(^Failed)(NSError *error);
 typedef void(^ITFinishedBlock)(id responseObject, NSError *error);
 typedef void(^CallBackMessageBlock)(id resposeObject);
 
-typedef void(^requestBlcok)(NSArray * array);
+//网络请求返回数组类Block
+typedef void(^requestBlock)(NSArray * array);
+
+//页面跳转类Block
+typedef void(^vcBlock)(UIViewController * viewController);
+typedef void(^viewBlock)(UIView * view);
 //disable loggin on production
 #ifdef DEBUG
 #define KSLog(format, ...) CFShow((__bridge CFTypeRef)[NSString stringWithFormat:format, ## __VA_ARGS__]);
