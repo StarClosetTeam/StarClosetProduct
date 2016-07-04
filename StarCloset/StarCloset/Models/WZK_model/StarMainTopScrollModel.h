@@ -12,6 +12,8 @@
 
 @property (copy, nonatomic) NSString * title;
 @property (copy, nonatomic) NSString * picUrl;
+@property (copy, nonatomic) NSString * origin_price;
+@property (copy, nonatomic) NSString * price;
 @property (assign, nonatomic) CGFloat  height;
 @property (assign, nonatomic) CGFloat  width;
 

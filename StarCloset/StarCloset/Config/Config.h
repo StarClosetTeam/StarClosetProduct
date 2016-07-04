@@ -71,6 +71,7 @@ typedef void(^viewBlock)(UIView * view);
 
 //
 // 随机色
+#define ARCCOLOR [UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1]
 #define BXRandomColor BXColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 // 设置颜色

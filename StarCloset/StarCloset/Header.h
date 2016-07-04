@@ -38,8 +38,20 @@
 #import "StarMainViewController.h"
 //明星衣橱首页ScrollviewModel
 #import "StarMainTopScrollModel.h"
+//明星衣橱首页特价优惠model
+#import "StarSpecialOfferModel.h"
+//明星衣橱首页分类Model
+#import "StarMainClassificationModel.h"
+//明星衣橱首页特价界面
+#import "SpecialOfferViewController.h"
 //明星衣橱首页搜索跳转页面
 #import "StarSearchViewController.h"
+//明星衣橱首页tableView自定义Cell
+#import "StarMainTableViewCell.h"
+//明星衣橱首页collectionViewCell
+#import "StarMainCollectionViewCell.h"
+//明星衣橱collectionViewLayout
+#import "CollectionViewClassificationLayout.h"
 
 
 //搭配界面

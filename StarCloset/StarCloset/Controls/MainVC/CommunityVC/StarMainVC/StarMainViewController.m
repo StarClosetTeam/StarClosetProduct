@@ -18,9 +18,11 @@ typedef enum : NSUInteger {
     UIScrollViewChooseTagCollectionView,
 } UIScrollViewChooseTag;
 
-@interface StarMainViewController ()<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface StarMainViewController ()<UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIViewTool * viewTool;
+
+@property (strong, nonatomic) UIView * SpecialOfferView;
 @property (strong, nonatomic) UIScrollView * mainScrollView;
 @property (strong, nonatomic) UIScrollView * topScrollView;
 @property (strong, nonatomic) UITableView * tableView;
@@ -35,14 +37,17 @@ typedef enum : NSUInteger {
 - (void)viewDidLoad {
     [super viewDidLoad];
     viewTool =  [UIViewTool shareTool];
-    
+    //    主要的ScrollView
     [self createMainScrollView];
-    
+    //    设置导航搜索栏
     [self setNavigationSearthTF];
-    
+    //    设置顶部ScrollView
     [self setTopScrollView];
-    
+    //    设置特价优惠
+    [self setSpecialOffer];
+    //    设置主要tableView
     [self createTopTableView];
+    //    获取tableView的数据
     
 }
 //    设置搜索栏
@@ -62,6 +67,7 @@ typedef enum : NSUInteger {
     [viewTool createStarMainTopScrollWithViewBlock:^(UIView *view) {
         _topScrollView = (UIScrollView*)view;
         [_mainScrollView addSubview:_topScrollView];
+        [_mainScrollView sendSubviewToBack:_topScrollView];
         viewTool.pageContrl.center = CGPointMake(kMainBoundsW/2, 250);
         [_mainScrollView addSubview:viewTool.pageContrl];
     } withButtonBlcok:^{
@@ -76,67 +82,73 @@ typedef enum : NSUInteger {
     _mainScrollView.contentSize = CGSizeMake(0, 1000);
     [self.view addSubview:_mainScrollView];
     _mainScrollView.tag = UIScrollViewChooseTagMain;
+    _mainScrollView.showsVerticalScrollIndicator = NO;
+    _mainScrollView.delegate = self;
 }
-#pragma mark - 创建tabelView
+#pragma mark - 设置特价优惠
+- (void)setSpecialOffer
+{
+    [viewTool createSpecialOfferButtonWithBlock:^(UIView *view) {
+        _SpecialOfferView = view;
+        [_mainScrollView addSubview:_SpecialOfferView];
+        _SpecialOfferView.sd_layout.leftEqualToView(_mainScrollView).topSpaceToView(_mainScrollView,290).rightEqualToView(_mainScrollView).heightIs(300);
+        
+    } withButtonClickBlcok:^(UIView *view) {
+        
+        SpecialOfferViewController * SpecialOfferVC = [SpecialOfferViewController new];
+        [self.navigationController pushViewController:SpecialOfferVC animated:NO ];
+    }];
+    
+}
+//创建tableViewView
 - (void)createTopTableView
 {
-    UITableView*  topTableView = [[UITableView alloc]initWithFrame:CGRectMake(0,0, 0, 0) style:UITableViewStyleGrouped];
-    topTableView.delegate = self;
-    topTableView.dataSource = self;
-    topTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    /**自定义Cell时注意更改注册类及xid*/
-    [topTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    [self.view addSubview:topTableView];
-    topTableView.tag = UIScrollViewChooseTagTabelView;
-    _tableView = topTableView;
-}
-#pragma mark - -----tableView协议方法-------
-/**回调函数，设置tableView每区多少个cell*/
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    /**注意数据源数量*/
-    return 0;
-}
-/**回调函数，设置tableViewcell的内容*/
-- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    /**注意返回cell的类型*/
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
-    return cell;
-}
-/**回调函数，设置tableView有多少个区*/
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-/**回调函数，设置tableViewCell的行高*/
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 209;
-}
-/**回调函数，设置tableView区头的高度*/
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 0.01;
-}
-/**回调函数，设置tableView区尾的高度*/
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 0.01;
+    [viewTool  createTopTableViewWithViewBlock:^(UIView *view) {
+        static int i = 0;
+        i++;
+        _tableView = (UITableView*)view;
+        [_mainScrollView addSubview:_tableView];
+        _tableView.frame = CGRectMake(0, 590, kMainBoundsW, 560*i);
+        //        KSLog(@"%@>>>>",NSStringFromCGRect(_tableView.frame));
+        [_tableView reloadData];
+    } withEventBlock:^(UIView *view) {
+        
+    }];
 }
 
-/*获取tableView的数据源*/
-- (void)getTableViewData
+#pragma mark - 创建CollectionView
+- (void)createCollectionView
 {
-    
+    [viewTool createCollectionViewWithViewBlock:^(UIView *view) {
+        
+    } withEventBlock:^{
+        
+    }];
 }
 
 //ScrollView滑动调用方法
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    _mainScrollView.contentSize = CGSizeMake(0, _topScrollView.frame.size.height+300+_tableView.contentSize.height);
+    //    KSLog(@"主Scroll偏移量%f",scrollView.contentOffset.y);
+    
+    for (NSInteger i = 0; i<5; i++) {
+        if (_mainScrollView.contentOffset.y >= 375+575.5*i) {
+            [viewTool getTabelViewDataWithNumber:i+2];
+        }
+    }
+    
+    if (_mainScrollView.contentOffset.y >= 3163) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            [self createCollectionView];
+        });
+    }
     
 }
+
+
+
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -145,7 +157,7 @@ typedef enum : NSUInteger {
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 
