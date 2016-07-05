@@ -36,6 +36,14 @@
 		04A2081E1D293F4100DD7117 /* StarSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A2081D1D293F4100DD7117 /* StarSearchViewController.m */; };
 		04A208221D293FE200DD7117 /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A208211D293FE200DD7117 /* RequestTool.m */; };
 		04A208251D29400200DD7117 /* UIViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A208241D29400200DD7117 /* UIViewTool.m */; };
+		3F6CB8251D2A53080057F78E /* RequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CB8241D2A53080057F78E /* RequestData.m */; };
+		3F6CB8331D2A638F0057F78E /* RequestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CB8321D2A638F0057F78E /* RequestDataModel.m */; };
+		3FA294421D2B44FE003B7D1E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2943A1D2B44FE003B7D1E /* UIView+Frame.m */; };
+		3FA294431D2B44FE003B7D1E /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2943C1D2B44FE003B7D1E /* YZDisplayTitleLabel.m */; };
+		3FA294441D2B44FE003B7D1E /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2943E1D2B44FE003B7D1E /* YZDisplayViewController.m */; };
+		3FA294451D2B44FE003B7D1E /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA294411D2B44FE003B7D1E /* YZFlowLayout.m */; };
+		3FA2944B1D2B450B003B7D1E /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA294481D2B450B003B7D1E /* ChildViewController.m */; };
+		3FA2944C1D2B450B003B7D1E /* FullChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2944A1D2B450B003B7D1E /* FullChildViewController.m */; };
 		D7D032B877DDD0B57E8F5DDA /* libPods-StarCloset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD79B2C340CA1F19041F115 /* libPods-StarCloset.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +97,24 @@
 		04A208231D29400200DD7117 /* UIViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTool.h; sourceTree = "<group>"; };
 		04A208241D29400200DD7117 /* UIViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewTool.m; sourceTree = "<group>"; };
 		326CD89BCE74B8F418DAFC22 /* Pods-StarCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarCloset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarCloset/Pods-StarCloset.debug.xcconfig"; sourceTree = "<group>"; };
+		3F6CB8231D2A53080057F78E /* RequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestData.h; sourceTree = "<group>"; };
+		3F6CB8241D2A53080057F78E /* RequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestData.m; sourceTree = "<group>"; };
+		3F6CB8261D2A53E10057F78E /* CollocationURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollocationURL.h; sourceTree = "<group>"; };
+		3F6CB8311D2A638F0057F78E /* RequestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDataModel.h; sourceTree = "<group>"; };
+		3F6CB8321D2A638F0057F78E /* RequestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDataModel.m; sourceTree = "<group>"; };
+		3FA294391D2B44FE003B7D1E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		3FA2943A1D2B44FE003B7D1E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3FA2943B1D2B44FE003B7D1E /* YZDisplayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayTitleLabel.h; sourceTree = "<group>"; };
+		3FA2943C1D2B44FE003B7D1E /* YZDisplayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayTitleLabel.m; sourceTree = "<group>"; };
+		3FA2943D1D2B44FE003B7D1E /* YZDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewController.h; sourceTree = "<group>"; };
+		3FA2943E1D2B44FE003B7D1E /* YZDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayViewController.m; sourceTree = "<group>"; };
+		3FA2943F1D2B44FE003B7D1E /* YZDisplayViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewHeader.h; sourceTree = "<group>"; };
+		3FA294401D2B44FE003B7D1E /* YZFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZFlowLayout.h; sourceTree = "<group>"; };
+		3FA294411D2B44FE003B7D1E /* YZFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZFlowLayout.m; sourceTree = "<group>"; };
+		3FA294471D2B450B003B7D1E /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		3FA294481D2B450B003B7D1E /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		3FA294491D2B450B003B7D1E /* FullChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullChildViewController.h; sourceTree = "<group>"; };
+		3FA2944A1D2B450B003B7D1E /* FullChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullChildViewController.m; sourceTree = "<group>"; };
 		5BD79B2C340CA1F19041F115 /* libPods-StarCloset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarCloset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC024F58A0C2CBAD4C62AECC /* Pods-StarCloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarCloset.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarCloset/Pods-StarCloset.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,7 +156,7 @@
 				0471D48E1D2766C3005B0A2D /* Controls */,
 				04A208141D29380E00DD7117 /* Models */,
 				0471D4951D2766C3005B0A2D /* Tools */,
-				0471D4961D2766C3005B0A2D /* Views */,
+				3FA293EF1D2B3D73003B7D1E /* Third */,
 				0471D4AA1D278D27005B0A2D /* Resource */,
 				0471D4771D2765FC005B0A2D /* AppDelegate.h */,
 				0471D4781D2765FC005B0A2D /* AppDelegate.m */,
@@ -198,16 +224,10 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		0471D4961D2766C3005B0A2D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		0471D49B1D2774C5005B0A2D /* RequestTool */ = {
 			isa = PBXGroup;
 			children = (
+				3F6CB8221D2A4EB60057F78E /* Y-Tool */,
 				04A2081F1D293FE200DD7117 /* wzk_tool */,
 				04A207D51D29260700DD7117 /* RequestClient.h */,
 				04A207D61D29260700DD7117 /* RequestClient.m */,
@@ -284,6 +304,7 @@
 			children = (
 				0471D4C41D27C09A005B0A2D /* Config.h */,
 				04A208111D2930B200DD7117 /* StarClosetURL.h */,
+				3F6CB8261D2A53E10057F78E /* CollocationURL.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -323,6 +344,7 @@
 		04A208141D29380E00DD7117 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F6CB8291D2A586A0057F78E /* Y-Model */,
 				04A208151D29380E00DD7117 /* WZK_model */,
 			);
 			path = Models;
@@ -346,6 +368,63 @@
 				04A208241D29400200DD7117 /* UIViewTool.m */,
 			);
 			path = wzk_tool;
+			sourceTree = "<group>";
+		};
+		3F6CB8221D2A4EB60057F78E /* Y-Tool */ = {
+			isa = PBXGroup;
+			children = (
+				3F6CB8231D2A53080057F78E /* RequestData.h */,
+				3F6CB8241D2A53080057F78E /* RequestData.m */,
+			);
+			path = "Y-Tool";
+			sourceTree = "<group>";
+		};
+		3F6CB8291D2A586A0057F78E /* Y-Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F6CB8311D2A638F0057F78E /* RequestDataModel.h */,
+				3F6CB8321D2A638F0057F78E /* RequestDataModel.m */,
+			);
+			path = "Y-Model";
+			sourceTree = "<group>";
+		};
+		3FA293EF1D2B3D73003B7D1E /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				3FA294381D2B44FE003B7D1E /* YZDisplayViewController */,
+				3FA294461D2B450B003B7D1E /* TableViewController */,
+			);
+			name = Third;
+			path = Models/WZK_model/Third;
+			sourceTree = "<group>";
+		};
+		3FA294381D2B44FE003B7D1E /* YZDisplayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3FA294391D2B44FE003B7D1E /* UIView+Frame.h */,
+				3FA2943A1D2B44FE003B7D1E /* UIView+Frame.m */,
+				3FA2943B1D2B44FE003B7D1E /* YZDisplayTitleLabel.h */,
+				3FA2943C1D2B44FE003B7D1E /* YZDisplayTitleLabel.m */,
+				3FA2943D1D2B44FE003B7D1E /* YZDisplayViewController.h */,
+				3FA2943E1D2B44FE003B7D1E /* YZDisplayViewController.m */,
+				3FA2943F1D2B44FE003B7D1E /* YZDisplayViewHeader.h */,
+				3FA294401D2B44FE003B7D1E /* YZFlowLayout.h */,
+				3FA294411D2B44FE003B7D1E /* YZFlowLayout.m */,
+			);
+			name = YZDisplayViewController;
+			path = ../../../Resource/CollectionViewLayout/YZDisplayViewController;
+			sourceTree = "<group>";
+		};
+		3FA294461D2B450B003B7D1E /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3FA294471D2B450B003B7D1E /* ChildViewController.h */,
+				3FA294481D2B450B003B7D1E /* ChildViewController.m */,
+				3FA294491D2B450B003B7D1E /* FullChildViewController.h */,
+				3FA2944A1D2B450B003B7D1E /* FullChildViewController.m */,
+			);
+			name = TableViewController;
+			path = ../../../Resource/TableViewController;
 			sourceTree = "<group>";
 		};
 		53AED9C014F4EBD11FFE7009 /* Frameworks */ = {
@@ -499,19 +578,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				0471D4BB1D27ADCB005B0A2D /* CommunityViewController.m in Sources */,
+				3FA294431D2B44FE003B7D1E /* YZDisplayTitleLabel.m in Sources */,
 				0471D4791D2765FC005B0A2D /* AppDelegate.m in Sources */,
 				04A207D71D29260700DD7117 /* RequestClient.m in Sources */,
+				3FA294441D2B44FE003B7D1E /* YZDisplayViewController.m in Sources */,
 				04A2081E1D293F4100DD7117 /* StarSearchViewController.m in Sources */,
 				0471D4C11D27AE07005B0A2D /* CollecationViewController.m in Sources */,
 				04A208221D293FE200DD7117 /* RequestTool.m in Sources */,
 				04A208251D29400200DD7117 /* UIViewTool.m in Sources */,
 				04A2080C1D292AEF00DD7117 /* ShoppingViewController.m in Sources */,
 				04A2081B1D293B7000DD7117 /* StarMainViewController.m in Sources */,
+				3FA294451D2B44FE003B7D1E /* YZFlowLayout.m in Sources */,
 				0471D4971D2766C3005B0A2D /* WelcomeViewController.m in Sources */,
 				0471D4761D2765FC005B0A2D /* main.m in Sources */,
+				3FA294421D2B44FE003B7D1E /* UIView+Frame.m in Sources */,
 				0471D4BE1D27ADE7005B0A2D /* SpecialViewController.m in Sources */,
 				04A208181D29385100DD7117 /* StarMainTopScrollModel.m in Sources */,
+				3FA2944C1D2B450B003B7D1E /* FullChildViewController.m in Sources */,
+				3F6CB8251D2A53080057F78E /* RequestData.m in Sources */,
 				04A208091D292ADE00DD7117 /* ManViewController.m in Sources */,
+				3F6CB8331D2A638F0057F78E /* RequestDataModel.m in Sources */,
+				3FA2944B1D2B450B003B7D1E /* ChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

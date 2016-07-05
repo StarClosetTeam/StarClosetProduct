@@ -61,3 +61,20 @@
 
 //封装创建View类的工具
 #import "UIViewTool.h"
+
+//获得搭配数据的工具
+#import "RequestData.h"
+
+#import "CollocationURL.h"
+
+//搭配数据的model
+#import "RequestDataModel.h"
+
+
+
+//子视图的设置
+#import "ChildViewController.h"
+#import "FullChildViewController.h"
+
+//显示视图的头文件
+#import "YZDisplayViewHeader.h"
