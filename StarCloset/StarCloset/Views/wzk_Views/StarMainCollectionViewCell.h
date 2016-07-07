@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) StarMainClassificationModel * model;
 
+- (void)setViewWithModel:(StarMainClassificationModel*)model;
+
 @end

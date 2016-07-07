@@ -19,7 +19,9 @@
 
 
 - (instancetype)initWithDictionary:(NSDictionary*)dictionary;
-
 + (instancetype)createModelWithDictionary:(NSDictionary*)dictionary;
+
+- (instancetype)initWithFMResultSet:(FMResultSet*)aSet;
++ (instancetype)createWithFMResultSet:(FMResultSet*)aSet;
 
 @end

@@ -10,6 +10,6 @@
 
 @interface CollectionViewClassificationLayout : UICollectionViewFlowLayout
 
-
+@property (strong, nonatomic) NSArray * array;
 
 @end

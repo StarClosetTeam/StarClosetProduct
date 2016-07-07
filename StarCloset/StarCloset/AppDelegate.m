@@ -30,7 +30,37 @@
     
     [self.window makeKeyAndVisible];
     
+    [databaseTool createSQlite];
+    
+//    [self requestData];
+
     return YES;
+}
+
+- (void)requestData
+{
+    //    请求首页Scrollview的数据并写入数据库
+    [RequestTool requestStarClosetDataWith:^(NSArray *array) {
+        [databaseTool createSqliteTableWithStarMainTopScrollModel];
+        [databaseTool insertIntoSqliteTableWithStarMainTopScrollModelArray:array];
+    }];
+    //    请求首页的特价优惠数据写入数据库
+    [RequestTool requestDataForSpecialOfferWithBlcok:^(NSArray *array) {
+        [databaseTool createTabelSpecialOffer];
+        [databaseTool insertDataToTabelSpecialOfferWithArray:array];
+    }];
+    //    请求各国馆数据并写入数据库
+    for (NSInteger i =1; i<=6; i++) {
+        [RequestTool requestDateForFindLibraryWithLibraryID:i WithBlock:^(NSArray *array) {
+            [databaseTool createCountriesTable];
+            [databaseTool insertIntoCountriesTableWithID:i StarMainTopScrollModelArray:array];
+        }];
+    }
+    //请求分类数据-今日新上
+    [RequestTool requestDataForClassificationWithID:1 withRequestBlcok:^(NSArray *array) {
+        [databaseTool createClassTabelWithID:1];
+        [databaseTool insertDataToTabelClassID:1 With:array];
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

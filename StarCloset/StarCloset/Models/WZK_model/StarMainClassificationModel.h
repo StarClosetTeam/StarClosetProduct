@@ -13,12 +13,19 @@
 
 @property (assign, nonatomic) CGFloat  height;
 @property (assign, nonatomic) CGFloat  width;
+
+@property (assign, nonatomic) CGFloat  needH;
+@property (assign, nonatomic) CGFloat  needW;
+
 @property (strong, nonatomic) componentModel * model;
 
 - (instancetype)initWithDictionary:(NSDictionary*)dictionary;
 
 + (instancetype)createModelWithDictionary:(NSDictionary*)dictionary;
 
+- (instancetype)initWithFMResult:(FMResultSet*)aSet;
+
++(instancetype)createModelWithFMResult:(FMResultSet*)aSet;
 
 @end
 
@@ -34,6 +41,7 @@
 @property (copy, nonatomic) NSString * price;
 @property (copy, nonatomic) NSString * publish_date;
 @property (copy, nonatomic) NSString * sales;
+@property (copy, nonatomic) NSString * nationalFlag;
 
 - (instancetype)initWithDictionary:(NSDictionary*)dictionary;
 

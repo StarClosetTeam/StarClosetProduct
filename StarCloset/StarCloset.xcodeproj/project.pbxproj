@@ -42,6 +42,12 @@
 		04A2081E1D293F4100DD7117 /* StarSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A2081D1D293F4100DD7117 /* StarSearchViewController.m */; };
 		04A208221D293FE200DD7117 /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A208211D293FE200DD7117 /* RequestTool.m */; };
 		04A208251D29400200DD7117 /* UIViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A208241D29400200DD7117 /* UIViewTool.m */; };
+		04B1A6311D2B5CDB00DC46F3 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A6271D2B5CDB00DC46F3 /* Action.m */; };
+		04B1A6321D2B5CDB00DC46F3 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A6291D2B5CDB00DC46F3 /* Component.m */; };
+		04B1A6331D2B5CDB00DC46F3 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A62B1D2B5CDB00DC46F3 /* Data.m */; };
+		04B1A6341D2B5CDB00DC46F3 /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A62E1D2B5CDB00DC46F3 /* Items.m */; };
+		04B1A6351D2B5CDB00DC46F3 /* StarMainClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A6301D2B5CDB00DC46F3 /* StarMainClassModel.m */; };
+		04B1A6391D2B8ABF00DC46F3 /* databaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A6381D2B8ABF00DC46F3 /* databaseTool.m */; };
 		D7D032B877DDD0B57E8F5DDA /* libPods-StarCloset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD79B2C340CA1F19041F115 /* libPods-StarCloset.a */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +112,19 @@
 		04A208211D293FE200DD7117 /* RequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTool.m; sourceTree = "<group>"; };
 		04A208231D29400200DD7117 /* UIViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTool.h; sourceTree = "<group>"; };
 		04A208241D29400200DD7117 /* UIViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewTool.m; sourceTree = "<group>"; };
+		04B1A6261D2B5CDB00DC46F3 /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		04B1A6271D2B5CDB00DC46F3 /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
+		04B1A6281D2B5CDB00DC46F3 /* Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		04B1A6291D2B5CDB00DC46F3 /* Component.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Component.m; sourceTree = "<group>"; };
+		04B1A62A1D2B5CDB00DC46F3 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		04B1A62B1D2B5CDB00DC46F3 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		04B1A62C1D2B5CDB00DC46F3 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
+		04B1A62D1D2B5CDB00DC46F3 /* Items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Items.h; sourceTree = "<group>"; };
+		04B1A62E1D2B5CDB00DC46F3 /* Items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Items.m; sourceTree = "<group>"; };
+		04B1A62F1D2B5CDB00DC46F3 /* StarMainClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarMainClassModel.h; sourceTree = "<group>"; };
+		04B1A6301D2B5CDB00DC46F3 /* StarMainClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarMainClassModel.m; sourceTree = "<group>"; };
+		04B1A6371D2B8ABF00DC46F3 /* databaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = databaseTool.h; sourceTree = "<group>"; };
+		04B1A6381D2B8ABF00DC46F3 /* databaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = databaseTool.m; sourceTree = "<group>"; };
 		326CD89BCE74B8F418DAFC22 /* Pods-StarCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarCloset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarCloset/Pods-StarCloset.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD79B2C340CA1F19041F115 /* libPods-StarCloset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarCloset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC024F58A0C2CBAD4C62AECC /* Pods-StarCloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarCloset.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarCloset/Pods-StarCloset.release.xcconfig"; sourceTree = "<group>"; };
@@ -365,6 +384,7 @@
 		04A208151D29380E00DD7117 /* WZK_model */ = {
 			isa = PBXGroup;
 			children = (
+				04B1A6251D2B5CDB00DC46F3 /* StarMainClassModel */,
 				04A208161D29385100DD7117 /* StarMainTopScrollModel.h */,
 				04A208171D29385100DD7117 /* StarMainTopScrollModel.m */,
 				049D837A1D29FAC9004278FC /* StarSpecialOfferModel.h */,
@@ -382,8 +402,36 @@
 				04A208211D293FE200DD7117 /* RequestTool.m */,
 				04A208231D29400200DD7117 /* UIViewTool.h */,
 				04A208241D29400200DD7117 /* UIViewTool.m */,
+				04B1A6361D2B8AA300DC46F3 /* databaseTool */,
 			);
 			path = wzk_tool;
+			sourceTree = "<group>";
+		};
+		04B1A6251D2B5CDB00DC46F3 /* StarMainClassModel */ = {
+			isa = PBXGroup;
+			children = (
+				04B1A6261D2B5CDB00DC46F3 /* Action.h */,
+				04B1A6271D2B5CDB00DC46F3 /* Action.m */,
+				04B1A6281D2B5CDB00DC46F3 /* Component.h */,
+				04B1A6291D2B5CDB00DC46F3 /* Component.m */,
+				04B1A62A1D2B5CDB00DC46F3 /* Data.h */,
+				04B1A62B1D2B5CDB00DC46F3 /* Data.m */,
+				04B1A62C1D2B5CDB00DC46F3 /* DataModels.h */,
+				04B1A62D1D2B5CDB00DC46F3 /* Items.h */,
+				04B1A62E1D2B5CDB00DC46F3 /* Items.m */,
+				04B1A62F1D2B5CDB00DC46F3 /* StarMainClassModel.h */,
+				04B1A6301D2B5CDB00DC46F3 /* StarMainClassModel.m */,
+			);
+			path = StarMainClassModel;
+			sourceTree = "<group>";
+		};
+		04B1A6361D2B8AA300DC46F3 /* databaseTool */ = {
+			isa = PBXGroup;
+			children = (
+				04B1A6371D2B8ABF00DC46F3 /* databaseTool.h */,
+				04B1A6381D2B8ABF00DC46F3 /* databaseTool.m */,
+			);
+			path = databaseTool;
 			sourceTree = "<group>";
 		};
 		53AED9C014F4EBD11FFE7009 /* Frameworks */ = {
@@ -538,6 +586,7 @@
 			files = (
 				049D837C1D29FAC9004278FC /* StarSpecialOfferModel.m in Sources */,
 				0471D4BB1D27ADCB005B0A2D /* CommunityViewController.m in Sources */,
+				04B1A6391D2B8ABF00DC46F3 /* databaseTool.m in Sources */,
 				0471D4791D2765FC005B0A2D /* AppDelegate.m in Sources */,
 				04A207D71D29260700DD7117 /* RequestClient.m in Sources */,
 				049D83881D2ABADC004278FC /* CollectionViewClassificationLayout.m in Sources */,
@@ -545,12 +594,17 @@
 				049D837F1D2A0D2C004278FC /* SpecialOfferViewController.m in Sources */,
 				0471D4C11D27AE07005B0A2D /* CollecationViewController.m in Sources */,
 				04A208221D293FE200DD7117 /* RequestTool.m in Sources */,
+				04B1A6311D2B5CDB00DC46F3 /* Action.m in Sources */,
 				049D83821D2AA73E004278FC /* StarMainClassificationModel.m in Sources */,
+				04B1A6321D2B5CDB00DC46F3 /* Component.m in Sources */,
+				04B1A6341D2B5CDB00DC46F3 /* Items.m in Sources */,
+				04B1A6351D2B5CDB00DC46F3 /* StarMainClassModel.m in Sources */,
 				04A208251D29400200DD7117 /* UIViewTool.m in Sources */,
 				04A2080C1D292AEF00DD7117 /* ShoppingViewController.m in Sources */,
 				049D83761D29EE5C004278FC /* StarMainTableViewCell.m in Sources */,
 				04A2081B1D293B7000DD7117 /* StarMainViewController.m in Sources */,
 				0471D4971D2766C3005B0A2D /* WelcomeViewController.m in Sources */,
+				04B1A6331D2B5CDB00DC46F3 /* Data.m in Sources */,
 				0471D4761D2765FC005B0A2D /* main.m in Sources */,
 				049D83851D2AB904004278FC /* StarMainCollectionViewCell.m in Sources */,
 				0471D4BE1D27ADE7005B0A2D /* SpecialViewController.m in Sources */,

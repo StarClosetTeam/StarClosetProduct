@@ -123,7 +123,11 @@ static AFHTTPSessionManager * _manager;
             for (NSDictionary * dic in ClassificationDataArray) {
                 StarMainClassificationModel * model = [StarMainClassificationModel createModelWithDictionary:dic];
                 [classifcationModelArray addObject:model];
+//                KSLog(@"%@",dic);
             }
+//            StarMainClassModel * model = [StarMainClassModel modelObjectWithDictionary:dictionary];
+            
+//            KSLog(@"%ld>>>>>232",model.data.items.count,model.data);
             if (block) {
                 block(classifcationModelArray);
             }

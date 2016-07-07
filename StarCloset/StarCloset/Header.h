@@ -8,7 +8,7 @@
 
 #ifndef Header_h
 #define Header_h
-
+#import  "DataModels.h"
 
 
 #endif /* Header_h */
@@ -20,6 +20,7 @@
 
 
 //导入的第三方头文件
+#import "FMDB.h"
 #import "AFNetworking.h"
 #import "AFHTTPSessionManager.h"
 #import "Masonry.h"
@@ -54,6 +55,7 @@
 #import "CollectionViewClassificationLayout.h"
 
 
+
 //搭配界面
 #import "CollecationViewController.h"
 //专题界面
@@ -70,6 +72,7 @@
 
 //工具类的头文件
 #import "RequestTool.h"
+#import "databaseTool.h"
 
 //封装创建View类的工具
 #import "UIViewTool.h"

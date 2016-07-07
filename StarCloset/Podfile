@@ -6,4 +6,5 @@ target :'StarCloset' do
     pod 'Masonry'
     pod 'SDWebImage'
     pod 'SDAutoLayout'
+    pod 'FMDB'
 end

@@ -20,4 +20,7 @@
 
 + (instancetype)createModelWithDictionary:(NSDictionary*)dictionary;
 
+- (instancetype)initWithFMResultSet:(FMResultSet*)aSet;
+
++ (instancetype)createModelWithFMResultSet:(FMResultSet*)aSet;
 @end

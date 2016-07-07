@@ -12,7 +12,4 @@
 
 @property (strong, nonatomic) NSArray * modelArray;
 
-- (void)setModelArray:(NSArray *)modelArray;
-
-
 @end

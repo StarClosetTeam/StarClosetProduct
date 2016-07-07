@@ -21,27 +21,18 @@
 
 
 
-/**cell注册机制时，调用此方法*/
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
 
-    }
-    return self;
-}
-
-- (void)setModelArray:(NSArray *)modelArray;
+- (void)setModelArray:(NSArray *)modelArray
 {
-    if (_modelArray != modelArray) {
         _modelArray = modelArray;
+
         [self setCell];
-         }
 }
 
 - (void)setCell
 {
-    for (NSArray * array in self.modelArray) {
+//    KSLog(@"45646465");
+    for (NSArray * array in _modelArray) {
         [self createScrollViewWith:array];
     }
 }
@@ -71,7 +62,6 @@
     scrollView.contentSize = CGSizeMake(ScrollViwSizeX, 0);
     [self.contentView addSubview:scrollView];
     ScrollHeight += cellHeight;
-    KSLog(@"%f",ScrollHeight);
 }
 
 @end

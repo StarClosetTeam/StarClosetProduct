@@ -30,5 +30,22 @@
     
 }
 
+- (instancetype)initWithFMResultSet:(FMResultSet*)aSet
+{
+    if (self = [super init]) {
+        self.activity_time = [aSet stringForColumn:@"activity_time"];
+        self.activity_flag = [aSet stringForColumn:@"activity_flag"];
+        self.img_index = [aSet stringForColumn:@"img_index"];
+        self.end_time = [aSet stringForColumn:@"end_time"];
+        self.start_time = [aSet stringForColumn:@"start_time"];
+    }
+    return self;
+}
+
++ (instancetype)createModelWithFMResultSet:(FMResultSet*)aSet
+{
+    return [[self alloc]initWithFMResultSet:aSet];
+}
+
 
 @end
