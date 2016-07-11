@@ -32,7 +32,7 @@
     
     [databaseTool createSQlite];
     
-//    [self requestData];
+    [self requestData];
 
     return YES;
 }

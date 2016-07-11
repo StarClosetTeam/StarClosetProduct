@@ -19,4 +19,9 @@
 /**请求分类数据*/
 + (void)requestDataForClassificationWithID:(NSInteger)ID withRequestBlcok:(requestBlock)block;
 
+
+#pragma mark - 搭配界面
+/**搭配界面请求数据URL*/
++ (void)requestdataForCollocationVCWithURL:(NSString*)URL withRequestBlock:(requestBlock)block;
+
 @end

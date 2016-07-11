@@ -58,6 +58,11 @@
 
 //搭配界面
 #import "CollecationViewController.h"
+//搭配适配
+#import "ChannelCollectionViewLayout.h"
+//搭配界面的CollectionViewModel
+#import "DataModels.h"
+
 //专题界面
 #import "SpecialViewController.h"
 

@@ -48,6 +48,12 @@
 		04B1A6341D2B5CDB00DC46F3 /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A62E1D2B5CDB00DC46F3 /* Items.m */; };
 		04B1A6351D2B5CDB00DC46F3 /* StarMainClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A6301D2B5CDB00DC46F3 /* StarMainClassModel.m */; };
 		04B1A6391D2B8ABF00DC46F3 /* databaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1A6381D2B8ABF00DC46F3 /* databaseTool.m */; };
+		04E663431D2F505200892649 /* ChannelCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E663421D2F505200892649 /* ChannelCollectionViewLayout.m */; };
+		04E663501D2F568400892649 /* wzkAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E663471D2F568400892649 /* wzkAction.m */; };
+		04E663511D2F568400892649 /* wzkCollocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E663491D2F568400892649 /* wzkCollocationModel.m */; };
+		04E663521D2F568400892649 /* wzkComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6634B1D2F568400892649 /* wzkComponent.m */; };
+		04E663531D2F568400892649 /* wzkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6634D1D2F568400892649 /* wzkData.m */; };
+		04E663541D2F568400892649 /* wzkItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6634F1D2F568400892649 /* wzkItems.m */; };
 		D7D032B877DDD0B57E8F5DDA /* libPods-StarCloset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD79B2C340CA1F19041F115 /* libPods-StarCloset.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +131,19 @@
 		04B1A6301D2B5CDB00DC46F3 /* StarMainClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarMainClassModel.m; sourceTree = "<group>"; };
 		04B1A6371D2B8ABF00DC46F3 /* databaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = databaseTool.h; sourceTree = "<group>"; };
 		04B1A6381D2B8ABF00DC46F3 /* databaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = databaseTool.m; sourceTree = "<group>"; };
+		04E663411D2F505200892649 /* ChannelCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCollectionViewLayout.h; sourceTree = "<group>"; };
+		04E663421D2F505200892649 /* ChannelCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelCollectionViewLayout.m; sourceTree = "<group>"; };
+		04E663451D2F568400892649 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
+		04E663461D2F568400892649 /* wzkAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wzkAction.h; sourceTree = "<group>"; };
+		04E663471D2F568400892649 /* wzkAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wzkAction.m; sourceTree = "<group>"; };
+		04E663481D2F568400892649 /* wzkCollocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wzkCollocationModel.h; sourceTree = "<group>"; };
+		04E663491D2F568400892649 /* wzkCollocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wzkCollocationModel.m; sourceTree = "<group>"; };
+		04E6634A1D2F568400892649 /* wzkComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wzkComponent.h; sourceTree = "<group>"; };
+		04E6634B1D2F568400892649 /* wzkComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wzkComponent.m; sourceTree = "<group>"; };
+		04E6634C1D2F568400892649 /* wzkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wzkData.h; sourceTree = "<group>"; };
+		04E6634D1D2F568400892649 /* wzkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wzkData.m; sourceTree = "<group>"; };
+		04E6634E1D2F568400892649 /* wzkItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wzkItems.h; sourceTree = "<group>"; };
+		04E6634F1D2F568400892649 /* wzkItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wzkItems.m; sourceTree = "<group>"; };
 		326CD89BCE74B8F418DAFC22 /* Pods-StarCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarCloset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarCloset/Pods-StarCloset.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD79B2C340CA1F19041F115 /* libPods-StarCloset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarCloset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC024F58A0C2CBAD4C62AECC /* Pods-StarCloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarCloset.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarCloset/Pods-StarCloset.release.xcconfig"; sourceTree = "<group>"; };
@@ -287,6 +306,8 @@
 			children = (
 				0471D4BF1D27AE07005B0A2D /* CollecationViewController.h */,
 				0471D4C01D27AE07005B0A2D /* CollecationViewController.m */,
+				04E663411D2F505200892649 /* ChannelCollectionViewLayout.h */,
+				04E663421D2F505200892649 /* ChannelCollectionViewLayout.m */,
 			);
 			path = collocationVC;
 			sourceTree = "<group>";
@@ -384,6 +405,7 @@
 		04A208151D29380E00DD7117 /* WZK_model */ = {
 			isa = PBXGroup;
 			children = (
+				04E663441D2F568400892649 /* CollocationModel */,
 				04B1A6251D2B5CDB00DC46F3 /* StarMainClassModel */,
 				04A208161D29385100DD7117 /* StarMainTopScrollModel.h */,
 				04A208171D29385100DD7117 /* StarMainTopScrollModel.m */,
@@ -432,6 +454,24 @@
 				04B1A6381D2B8ABF00DC46F3 /* databaseTool.m */,
 			);
 			path = databaseTool;
+			sourceTree = "<group>";
+		};
+		04E663441D2F568400892649 /* CollocationModel */ = {
+			isa = PBXGroup;
+			children = (
+				04E663451D2F568400892649 /* DataModels.h */,
+				04E663461D2F568400892649 /* wzkAction.h */,
+				04E663471D2F568400892649 /* wzkAction.m */,
+				04E663481D2F568400892649 /* wzkCollocationModel.h */,
+				04E663491D2F568400892649 /* wzkCollocationModel.m */,
+				04E6634A1D2F568400892649 /* wzkComponent.h */,
+				04E6634B1D2F568400892649 /* wzkComponent.m */,
+				04E6634C1D2F568400892649 /* wzkData.h */,
+				04E6634D1D2F568400892649 /* wzkData.m */,
+				04E6634E1D2F568400892649 /* wzkItems.h */,
+				04E6634F1D2F568400892649 /* wzkItems.m */,
+			);
+			path = CollocationModel;
 			sourceTree = "<group>";
 		};
 		53AED9C014F4EBD11FFE7009 /* Frameworks */ = {
@@ -485,6 +525,7 @@
 				TargetAttributes = {
 					0471D4701D2765FC005B0A2D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = UBG2D4R6N3;
 					};
 				};
 			};
@@ -586,8 +627,11 @@
 			files = (
 				049D837C1D29FAC9004278FC /* StarSpecialOfferModel.m in Sources */,
 				0471D4BB1D27ADCB005B0A2D /* CommunityViewController.m in Sources */,
+				04E663531D2F568400892649 /* wzkData.m in Sources */,
+				04E663541D2F568400892649 /* wzkItems.m in Sources */,
 				04B1A6391D2B8ABF00DC46F3 /* databaseTool.m in Sources */,
 				0471D4791D2765FC005B0A2D /* AppDelegate.m in Sources */,
+				04E663431D2F505200892649 /* ChannelCollectionViewLayout.m in Sources */,
 				04A207D71D29260700DD7117 /* RequestClient.m in Sources */,
 				049D83881D2ABADC004278FC /* CollectionViewClassificationLayout.m in Sources */,
 				04A2081E1D293F4100DD7117 /* StarSearchViewController.m in Sources */,
@@ -602,11 +646,14 @@
 				04A208251D29400200DD7117 /* UIViewTool.m in Sources */,
 				04A2080C1D292AEF00DD7117 /* ShoppingViewController.m in Sources */,
 				049D83761D29EE5C004278FC /* StarMainTableViewCell.m in Sources */,
+				04E663511D2F568400892649 /* wzkCollocationModel.m in Sources */,
+				04E663521D2F568400892649 /* wzkComponent.m in Sources */,
 				04A2081B1D293B7000DD7117 /* StarMainViewController.m in Sources */,
 				0471D4971D2766C3005B0A2D /* WelcomeViewController.m in Sources */,
 				04B1A6331D2B5CDB00DC46F3 /* Data.m in Sources */,
 				0471D4761D2765FC005B0A2D /* main.m in Sources */,
 				049D83851D2AB904004278FC /* StarMainCollectionViewCell.m in Sources */,
+				04E663501D2F568400892649 /* wzkAction.m in Sources */,
 				0471D4BE1D27ADE7005B0A2D /* SpecialViewController.m in Sources */,
 				04A208181D29385100DD7117 /* StarMainTopScrollModel.m in Sources */,
 				04A208091D292ADE00DD7117 /* ManViewController.m in Sources */,
@@ -712,11 +759,14 @@
 			baseConfigurationReference = 326CD89BCE74B8F418DAFC22 /* Pods-StarCloset.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/StarCloset/PrefixHeader.pch";
 				INFOPLIST_FILE = StarCloset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qp.StarCloset;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
@@ -726,11 +776,14 @@
 			baseConfigurationReference = DC024F58A0C2CBAD4C62AECC /* Pods-StarCloset.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/StarCloset/PrefixHeader.pch";
 				INFOPLIST_FILE = StarCloset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qp.StarCloset;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;

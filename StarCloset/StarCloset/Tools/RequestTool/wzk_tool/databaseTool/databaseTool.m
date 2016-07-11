@@ -43,7 +43,7 @@ static FMDatabaseQueue * _queue;
 {
     [_queue inTransaction:^(FMDatabase *db, BOOL *rollback) {
         for (StarMainTopScrollModel * Model in array) {
-        [db executeUpdate:[NSString stringWithFormat:@"insert into StarMainTopScrollModel (title,picUrl,origin_price,price,height,width) values ('%@','%@','%@','%@',%f,%f)",Model.title,Model.picUrl,Model.origin_price,Model.price,Model.height,Model.width]];
+            [db executeUpdate:[NSString stringWithFormat:@"insert into StarMainTopScrollModel (title,picUrl,origin_price,price,height,width) values ('%@','%@','%@','%@',%f,%f)",Model.title,Model.picUrl,Model.origin_price,Model.price,Model.height,Model.width]];
         }
     }];
 }
@@ -51,7 +51,7 @@ static FMDatabaseQueue * _queue;
 + (void)selectDataFormTabelStarMainTopScrollModelWithModelBlcok:(requestBlock)block
 {
     [_queue inTransaction:^(FMDatabase *db, BOOL *rollback) {
-      FMResultSet * set =  [db executeQueryWithFormat:@"select * from StarMainTopScrollModel"];
+        FMResultSet * set =  [db executeQueryWithFormat:@"select * from StarMainTopScrollModel"];
         NSMutableArray * modelArray = [NSMutableArray array];
         while ([set next]) {
             StarMainTopScrollModel * model = [StarMainTopScrollModel createWithFMResultSet:set];
@@ -132,7 +132,7 @@ static FMDatabaseQueue * _queue;
                 [db executeUpdate:[NSString stringWithFormat:@"insert into Countries (country,_index,title,picUrl,origin_price,price,height,width) values (%ld,'%@','%@','%@','%@','%@',%f,%f)",ID,_indexArray[i],Model.title,Model.picUrl,Model.origin_price,Model.price,Model.height,Model.width]];
             }
         }
-
+        
     }];
 }
 /**查询数据*/
@@ -148,11 +148,11 @@ static FMDatabaseQueue * _queue;
             while ([set next]) {
                 StarMainTopScrollModel * model = [StarMainTopScrollModel createWithFMResultSet:set];
                 [modelArray addObject:model];
-//                KSLog(@"%@++++++",model.picUrl);
+                //                KSLog(@"%@++++++",model.picUrl);
             }
             [array addObject:modelArray];
         }
-
+        
         if (block) {
             block(array);
         }
@@ -201,15 +201,25 @@ static FMDatabaseQueue * _queue;
 {
     [_queue inTransaction:^(FMDatabase *db, BOOL *rollback) {
         FMResultSet * set =  [db executeQuery:[NSString stringWithFormat:@"select * from Class%ld ",ID]];
-                              NSMutableArray * modelArray = [NSMutableArray array];
-                              while ([set next]) {
-                                  StarMainClassificationModel * model = [StarMainClassificationModel createModelWithFMResult:set];
-                                  [modelArray addObject:model];
-                              }
+        NSMutableArray * modelArray = [NSMutableArray array];
+        while ([set next]) {
+            StarMainClassificationModel * model = [StarMainClassificationModel createModelWithFMResult:set];
+            [modelArray addObject:model];
+        }
         if (block) {
             block(modelArray);
         }
     }];
 }
+
+
+#pragma mark - 搭配界面数据库
++ (void)createTabelForCollocationVCWithTitle:(NSString*)title
+{
+    [_queue inTransaction:^(FMDatabase *db, BOOL *rollback) {
+        [db executeUpdate:[NSString stringWithFormat:@"create table if not exists '%@' (id integer primary key autoincrement, needH integer , needW integer ,country text , Description text , modelID text , origin_price text , picUrl  text unique, price text,publish_date text,salest text,nationalFlag text);",title]];
+    }];
+}
+
 
 @end

@@ -138,4 +138,17 @@ static AFHTTPSessionManager * _manager;
     
 }
 
+#pragma mark - 搭配界面的请求
+
++ (void)requestdataForCollocationVCWithURL:(NSString*)URL withRequestBlock:(requestBlock)block
+{
+    [self shareRequestManeger];
+    [_manager GET:URL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+}
+
+
 @end
